@@ -16,6 +16,7 @@ jobs:
       - name : 'lanzamineto test-unitario'
         run: |
           npm i
+          npm install @testing-library/jest-dom
           npm run test-coverage
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
