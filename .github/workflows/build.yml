@@ -16,7 +16,7 @@ jobs:
       - name : 'lanzamineto test-unitario'
         run: |
           npm i
-          npm ruun test-coverage
+          npm run test-coverage
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
